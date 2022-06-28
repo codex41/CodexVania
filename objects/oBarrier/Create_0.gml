@@ -1,1 +1,0 @@
-barrier_max = image_yscale;

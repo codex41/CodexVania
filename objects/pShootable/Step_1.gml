@@ -1,0 +1,1 @@
+if (hp_cur <= 0) instance_destroy();
