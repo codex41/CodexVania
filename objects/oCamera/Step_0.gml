@@ -6,7 +6,7 @@ if (instance_exists(follow))
 	xTo = follow.x;
 	yTo = follow.y;	
 	
-	if ((follow).object_index == oP1Dead)
+	if ((follow).object_index == oPDead)
 	{
 		x = xTo;
 		y = yTo;
@@ -30,13 +30,15 @@ shake_remain = max(0,shake_remain-((1/shake_length) * shake_magnitude));
 //update camera view
 //this centers the camera on the player
 camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
+if (room != rMenu) && (room != rEnding)
+	{
+	if (layer_exists("Mountains"))
+	{
+		layer_x("Mountains",x/10);
+	}
 
-if (layer_exists("Mountains"))
-{
-	layer_x("Mountains",x/10);
-}
-
-if (layer_exists("Trees"))
-{
-	layer_x("Trees",x/15);
+	if (layer_exists("Trees"))
+	{
+		layer_x("Trees",x/15);
+	}
 }

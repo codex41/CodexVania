@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sHitSpark",
-    "path": "sprites/sHitSpark/sHitSpark.yy",
+    "name": "sHitSpark2",
+    "path": "sprites/sHitSpark2/sHitSpark2.yy",
   },
   "solid": false,
   "visible": true,

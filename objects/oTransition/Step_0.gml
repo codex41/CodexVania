@@ -32,6 +32,7 @@ if (mode != TRANS_MODE.OFF)
 			{
 				mode = TRANS_MODE.INTRO;
 				room_goto(target);  //go to the room we specified in the creation code
+				audio_play_sound(snDoor,1,false);
 				break;	
 			}
 			
