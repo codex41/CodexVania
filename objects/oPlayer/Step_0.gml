@@ -70,7 +70,7 @@ else
 canjump -= 1;
 if (canjump > 0) && (key_jump) && (!key_crouch)
 {
-	//jump speed
+	//jump speed + vibration
 	audio_play_sound(snJump,4,false);
 	gamepad_set_vibration(0,0.8,0.4);
 	alarm[0] = 5;
@@ -145,7 +145,7 @@ y = y + vsp;
 		if (landanim > 1) landanim = 2;
 		//coyote time
 		canjump = 30;
-		//triggers dust and landing animation
+		//triggers dust, vibration and landing animation
 		if (sprite_index == sPlayerAir)
 		{
 			audio_sound_pitch(snLand,choose(0.5,1.0,1.5));
